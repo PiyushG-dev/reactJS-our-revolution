@@ -1,5 +1,32 @@
+@font-face {
+  font-family: migra;
+  src: url(./fonts/PPMigra-Regular.fb0ee287.woff2);
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: grot;
+  src: url(./fonts/SharpGrotesk-Bold.164b198a.woff2);
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: com;
+  src: url(./fonts/TTCommons-Regular.7ec989a7.woff2);
+}
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
+
+body{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #E7E4E5;
+}
+
+
