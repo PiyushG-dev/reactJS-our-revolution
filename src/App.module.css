@@ -5,9 +5,9 @@
     background-color: #000;
     pointer-events: none;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    display: none;
-    /* z-index: 999; */
 }
+
+
 
 .loader_img_container{
     width: 150%;
@@ -42,16 +42,18 @@
 .navigation{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navigation p{
     font-family: com;
-    font-size: 1.2vmax;
+    font-size: 18px;
+    font-weight: lighter;
 } 
 
 .navigation p:nth-child(2){
     font-family: migra;
-    font-size: 2vmax;
+    font-size: 30px;
 }
 
 .hero_text{
@@ -88,7 +90,26 @@
 }
 
 .projects .item img{
-    width: 8vw;
-    height: 8vw;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
+}
+
+
+@media (max-width:500px){
+    .loader_img_container{
+        width: 300%;
+    }
+
+  
+    .hero_text{
+        padding-top: 40vw;
+    }
+
+    .hero_text h1{
+        font-size: 15vw;
+        line-height: 15vw;
+    }
+
+
 }
